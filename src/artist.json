@@ -1,0 +1,62 @@
+{
+  "name": "Almafuerte",
+  "albumCover": "/images/albumCovers/Almafuerte.jpg",
+  "releaseYear": "1998",
+  "tracks": [
+    {
+      "id": 1,
+      "name": "Mano Brava",
+      "path": "/public/songs/Mano Brava.mp3"
+    },
+    {
+      "id": 2,
+      "name": "Almafuerte",
+      "path": "/public/songs/Almafuerte.mp3"
+    },
+    {
+      "id": 3,
+      "name": "Triunfo",
+      "path": "/public/songs/Triunfo.mp3"
+    },
+    {
+      "id": 4,
+      "name": "Sé vos",
+      "path": "/public/songs/Sé Vos.mp3"
+    },
+    {
+      "id": 5,
+      "name": "Niño Jefe",
+      "path": "/public/songs/Niño Jefe.mp3"
+    },
+    {
+      "id": 6,
+      "name": "Memoria de Siglos",
+      "path": "/public/songs/Memoria De Siglos.mp3"
+    },
+    {
+      "id": 7,
+      "name": "Ser humano junto a los míos",
+      "path": "/public/songs/Ser Humano Junto A Los Mios.mp3"
+    },
+    {
+      "id": 8,
+      "name": "Desde el Oeste",
+      "path": "/public/songs/Desde El Oeste.mp3"
+    },
+    {
+      "id": 9,
+      "name": "Del más allá",
+      "path": "/public/songs/Del Más Allá.mp3"
+    },
+    {
+      "id": 10,
+      "name": "Tú eres su seguridad",
+      "path": "/public/songs/Tú Eres Su Seguridad.mp3"
+    },
+    {
+      "id": 11,
+      "name": "Celbo",
+      "path": "/public/songs/Ceibo.mp3"
+    }
+  ]
+}
