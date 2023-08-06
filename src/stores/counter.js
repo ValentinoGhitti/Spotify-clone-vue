@@ -1,5 +1,5 @@
-import { ref, computed } from 'vue'
-import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
+import artist from '../artist.json';
 
 export const useSongStore = defineStore('song', {
   state: () => ({
@@ -27,10 +27,52 @@ export const useSongStore = defineStore('song', {
         this.isPlaying = true;
         this.audio.play();
       }, 200);
-    }
+    },
 
-    playOrPauseSOng() {
-      
+    playOrPauseSong() {
+      if (this.audio.paused) {
+        this.isPlaying = true;
+        this.audio.play();
+      } else {
+        this.isPlaying = false;
+        this.audio.pause();
+      }
+    },
+
+    playOrPauseThisSong(artist, track) {
+      if (!this.audio || !this.audio.src || (this.currentTrack.id !== track.id)) {
+        this.loadSong(artist, track);
+        return;
+      }
+
+      this.playOrPauseSong();
+    },
+
+    prevSong(currentTrack) {
+      let track = artist.tracks[currentTrack.id - 2];
+      this.loadSong(artist, track);
+    },
+
+    nextSong(currentTrack) {
+      if (currentTrack.id === artist.tracks.length) {
+        let track = artist.tracks[0];
+        this.loadSong(artist, track);
+      } else {
+        this.loadSong(artist, track);
+      }
+    },
+
+    playFromFirst() {
+      this.resetState();
+      let track = artist.tracks[0];
+      this.loadSong(artist, track);
+    },
+
+    resetState() {
+      this.isPlaying = false;
+      this.audio = null;
+      this.currentArtist = null;
+      this.currentTrack = null;
     }
   }
 
