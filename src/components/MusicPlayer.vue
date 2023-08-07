@@ -1,7 +1,6 @@
 <template>
   <div 
     id="MusicPlayer"
-    v-if="audio"
     class="
       fixed
       flex
