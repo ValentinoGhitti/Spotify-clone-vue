@@ -18,8 +18,7 @@
           fillColor="#FFFFFF" 
           :size="25"
           @click="useSong.loadSong(artist, track)"
-        />
-        
+        /> 
         <Pause v-else fillColor="#FFFFFF" :size="25" @click="useSong.playOrPauseSong()"/>
       </div>
       <div v-else class="text-white font-semibold w-[40px] ml-5">

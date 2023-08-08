@@ -88,6 +88,6 @@ export const useSongStore = defineStore('song', {
       this.currentArtist = null;
       this.currentTrack = null;
     }
-  }
-  
+  },
+  persist: true
 })
