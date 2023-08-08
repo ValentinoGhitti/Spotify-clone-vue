@@ -44,8 +44,8 @@
       class="fixed w-[190px] bg-[#282828] shadow-2xl z-50 rounded-sm top-[52px] right-[35px] p-1 cursor-pointer"
     >
       <ul class="text-gray-200 font-semibold text-[14px]">
-        <li class="px-3 py-2.5 hover:bg-[#3E3D3D] border-b border-b-gray-600">Profile</li>
-        <li class="px-3 py-2.5 hover:bg-[#3E3D3D]">Log out</li>
+        <li class="px-3 py-2.5 hover:bg-[#3E3D3D] border-b border-b-gray-600">Perfil</li>
+        <li class="px-3 py-2.5 hover:bg-[#3E3D3D]">Cerrar sesión</li>
       </ul>
     </span>
   </div>
@@ -64,7 +64,7 @@
         <MenuItem
           class="ml-[1px]"
           :iconSize="23"
-          name="Home"
+          name="Inicio"
           iconString="home"
           pageUrl="/"
         />
@@ -73,7 +73,7 @@
         <MenuItem
           class="ml-[1px]"
           :iconSize="24"
-          name="Search"
+          name="Buscar"
           iconString="search"
           pageUrl="/search"
         />
@@ -82,7 +82,7 @@
         <MenuItem
           class="ml-[2px]"
           :iconSize="23"
-          name="Library"
+          name="Tu biblioteca"
           iconString="library"
           pageUrl="/library"
         />
@@ -90,18 +90,17 @@
 
       <div class="py-3.5"></div>
 
-      <MenuItem :iconSize="24" name="Create Playlist" iconString="playlist" pageUrl="/playlist" />
-      <MenuItem class="-ml-[1px]" :iconSize="27" name="Liked Songs" iconString="liked" pageUrl="/liked" />
+      <MenuItem :iconSize="24" name="Crear una nueva lista" iconString="playlist" pageUrl="/playlist" />
+      <MenuItem class="-ml-[1px]" :iconSize="27" name="Canciones que te gustan" iconString="liked" pageUrl="/liked" />
     </ul>
 
     <div class="border-b border-b-gray-700"></div>
 
     <ul>
-      <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">PlayList #1</li>
-      <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">PlayList #2</li>
-      <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">PlayList #3</li>
-      <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">PlayList #4</li>
-      <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">PlayList #5</li>
+      <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">PlayList para entrenar</li>
+      <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">PlayList para codear</li>
+      <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">PlayList relax</li>
+      <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">PlayList heavy argento</li>
     </ul>
   </div>
 

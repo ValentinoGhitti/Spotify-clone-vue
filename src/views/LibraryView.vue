@@ -20,7 +20,7 @@
         </div>
 
         <div class="text-gray-300 text-[13px] flex">
-          <div class="flex">Album</div>
+          <div class="flex">Álbum</div>
           <div class="ml-2 flex">
             <div class="circle mt-2 mr-2"></div>
             <span class="-ml-0.5">{{ artist.releaseYear }}</span>
@@ -28,7 +28,12 @@
 
           <div class="ml-2 flex">
             <div class="circle mt-2 mr-2"></div>
-            <span class="-ml-0.5">{{ artist.tracks.length }} songs</span>
+            <span class="-ml-0.5">{{ artist.tracks.length }} canciones</span>
+          </div>
+
+          <div class="ml-2 flex">
+            <div class="circle mt-2 mr-2"></div>
+            <span class="-ml-0.5">{{ artist.duration }}</span>
           </div>
         </div>
 
@@ -53,7 +58,7 @@
     <div class="flex items-center justify-between px-5 pt-2">
       <div class="flex items-center justify-between text-gray-400">
         <div class="mr-7">#</div>
-        <div class="text-sm">Title</div>
+        <div class="text-sm">Título</div>
       </div>
       <div>
         <ClockTimeThreeOutline fillColor="#FFFFFF" :size="18" />
